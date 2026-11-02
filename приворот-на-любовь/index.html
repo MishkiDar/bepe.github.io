@@ -16,8 +16,6 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/103424269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Приворот на мужчину — ясновидящая Вера | 20+ лет практики</title>
@@ -33,18 +31,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
   <style>
-    /* ============================================================
-       ДИЗАЙН-КОНЦЕПЦИЯ: «Глянцевый женский журнал»
-       — Тёплая кремово-розовая база, глубокий бордо/слива как акцент
-       — Крупная журнальная типографика (Playfair Display)
-       — Воздух, тонкие линии, деликатные тени
-       — Доверительный, интимный, «приватный клуб» тон
-       ============================================================ */
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* Палитра — тёплый глянец */
       --cream: #faf6f0;
       --cream-soft: #f3ece2;
       --blush: #e8d5d0;
@@ -136,9 +125,6 @@
       line-height: 1.75;
     }
 
-    /* ============================================================
-       КНОПКИ — журнальный стиль
-       ============================================================ */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -185,15 +171,11 @@
     .btn:active { transform: translateY(0); }
     :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
-    /* ============================================================
-       HERO — обложка журнала
-       ============================================================ */
     .hero {
       position: relative;
       padding: 48px 0 80px;
       overflow: hidden;
-      background:
-        linear-gradient(180deg, var(--cream-soft) 0%, var(--cream) 100%);
+      background: linear-gradient(180deg, var(--cream-soft) 0%, var(--cream) 100%);
     }
 
     .hero::before {
@@ -317,7 +299,6 @@
       font-weight: 500;
     }
 
-    /* Портрет Веры — журнальный кадр */
     .hero-portrait {
       position: relative;
       max-width: 420px;
@@ -366,9 +347,6 @@
       box-shadow: 0 8px 24px rgba(74, 34, 51, 0.25);
     }
 
-    /* ============================================================
-       ПРОБЛЕМА — карточки-«колонки»
-       ============================================================ */
     .problems {
       background: var(--cream-soft);
       border-top: 1px solid var(--line);
@@ -426,9 +404,6 @@
       line-height: 1.7;
     }
 
-    /* ============================================================
-       КАК РАБОТАЕТ — шаги
-       ============================================================ */
     .steps-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -467,9 +442,6 @@
       line-height: 1.7;
     }
 
-    /* ============================================================
-       ПОЧЕМУ ВЕРА — преимущества
-       ============================================================ */
     .why {
       background: var(--plum-deep);
       color: var(--cream);
@@ -548,9 +520,6 @@
       line-height: 1.7;
     }
 
-    /* ============================================================
-       ОТЗЫВЫ — журнальные цитаты
-       ============================================================ */
     .reviews {
       background: var(--cream-soft);
       border-top: 1px solid var(--line);
@@ -660,9 +629,6 @@
       font-style: italic;
     }
 
-    /* ============================================================
-       FAQ — элегантный аккордеон
-       ============================================================ */
     .faq-list {
       max-width: 820px;
       margin: 0 auto;
@@ -746,9 +712,6 @@
       max-width: 680px;
     }
 
-    /* ============================================================
-       CTA + ФОРМА
-       ============================================================ */
     .cta-section {
       background: var(--cream-soft);
       border-top: 1px solid var(--line);
@@ -830,7 +793,6 @@
       font-weight: 500;
     }
 
-    /* Форма */
     .form {
       display: flex;
       flex-direction: column;
@@ -856,6 +818,7 @@
     .field label .req { color: var(--wine); margin-left: 3px; }
 
     .field input,
+    .field select,
     .field textarea {
       width: 100%;
       padding: 14px 0;
@@ -870,6 +833,15 @@
       outline: none;
     }
 
+    .field select {
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235c4a4e' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      cursor: pointer;
+    }
+
     .field input::placeholder,
     .field textarea::placeholder {
       color: rgba(92, 74, 78, 0.45);
@@ -877,6 +849,7 @@
     }
 
     .field input:focus,
+    .field select:focus,
     .field textarea:focus { border-bottom-color: var(--plum); }
 
     .field textarea { resize: vertical; min-height: 70px; }
@@ -889,6 +862,7 @@
     }
 
     .field.has-error input,
+    .field.has-error select,
     .field.has-error textarea { border-bottom-color: var(--wine); }
     .field.has-error .field-error { display: block; }
 
@@ -946,9 +920,14 @@
       font-style: italic;
     }
 
-    /* ============================================================
-       FOOTER
-       ============================================================ */
+    .form-status.error {
+      display: block;
+      background: #fdf0f0;
+      border: 1px solid #e6b8b8;
+      color: var(--wine);
+      font-style: italic;
+    }
+
     .footer {
       background: var(--plum-deep);
       color: var(--cream);
@@ -996,9 +975,6 @@
       letter-spacing: 0.08em;
     }
 
-    /* ============================================================
-       ПЛАВАЮЩАЯ КНОПКА (mobile)
-       ============================================================ */
     .float-cta {
       position: fixed;
       bottom: 16px;
@@ -1056,9 +1032,6 @@
       flex-shrink: 0;
     }
 
-    /* ============================================================
-       АНИМАЦИЯ ПОЯВЛЕНИЯ — БЕЗОПАСНАЯ
-       ============================================================ */
     .reveal { opacity: 1; transform: none; }
 
     html.js-enabled .reveal {
@@ -1078,9 +1051,6 @@
       * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
     }
 
-    /* ============================================================
-       АДАПТИВ
-       ============================================================ */
     @media (min-width: 640px) {
       .section { padding: 96px 0; }
       .hero { padding: 56px 0 96px; }
@@ -1122,9 +1092,6 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       HERO — журнальная обложка
-       ============================================================ -->
   <header class="hero">
     <div class="container">
       <div class="hero-topline">
@@ -1154,10 +1121,7 @@
 
         <div class="hero-portrait reveal">
           <div class="hero-portrait-frame">
-            <img
-              src="img.jpg"
-              alt="Ясновидящая Вера — потомственная практикующая с 20-летним опытом"
-              width="800" height="1000" loading="eager">
+            <img src="img.jpg" alt="Ясновидящая Вера" width="800" height="1000" loading="eager">
           </div>
           <div class="hero-portrait-caption">Вера · потомственная ясновидящая</div>
         </div>
@@ -1166,10 +1130,6 @@
   </header>
 
   <main>
-
-    <!-- ============================================================
-         ПРОБЛЕМА
-         ============================================================ -->
     <section class="section problems" id="problems">
       <div class="container">
         <div class="section-head reveal">
@@ -1217,9 +1177,6 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         КАК РАБОТАЕТ
-         ============================================================ -->
     <section class="section" id="how">
       <div class="container">
         <div class="section-head reveal">
@@ -1256,9 +1213,6 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         ПОЧЕМУ ВЕРА
-         ============================================================ -->
     <section class="section why" id="why">
       <div class="container">
         <div class="section-head reveal">
@@ -1334,9 +1288,6 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         ОТЗЫВЫ
-         ============================================================ -->
     <section class="section reviews" id="reviews">
       <div class="container">
         <div class="section-head reveal">
@@ -1410,9 +1361,6 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         FAQ
-         ============================================================ -->
     <section class="section" id="faq">
       <div class="container">
         <div class="section-head reveal">
@@ -1487,9 +1435,6 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         CTA + ФОРМА
-         ============================================================ -->
     <section class="section cta-section" id="form">
       <div class="container">
         <div class="cta-wrap reveal">
@@ -1517,23 +1462,27 @@
             </p>
           </div>
 
-          <!-- ВАЖНО: для реальной отправки укажите endpoint в data-endpoint и раскомментируйте fetch в JS -->
-          <form class="form" id="lead-form" novalidate data-endpoint="">
+          <form class="form" id="lead-form" novalidate>
             <div class="field" id="field-name">
               <label for="name">Ваше имя <span class="req" aria-hidden="true">*</span></label>
               <input type="text" id="name" name="name" placeholder="Как к вам обращаться" autocomplete="name" required>
               <span class="field-error" role="alert">Пожалуйста, введите имя</span>
             </div>
 
-            <div class="field" id="field-phone">
-              <label for="phone">Телефон <span class="req" aria-hidden="true">*</span></label>
-              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required>
-              <span class="field-error" role="alert">Введите корректный номер телефона</span>
+            <div class="field" id="field-messenger">
+              <label for="messenger">Мессенджер <span class="req" aria-hidden="true">*</span></label>
+              <select id="messenger" name="messenger" required>
+                <option value="">— выберите мессенджер —</option>
+                <option value="Telegram">Telegram</option>
+                <option value="MAX">MAX</option>
+              </select>
+              <span class="field-error" role="alert">Выберите мессенджер</span>
             </div>
 
-            <div class="field" id="field-messenger">
-              <label for="messenger">Мессенджер <span style="opacity:0.55;font-size:0.7rem;">(необязательно)</span></label>
-              <input type="text" id="messenger" name="messenger" placeholder="Telegram / WhatsApp — ваш ник или номер">
+            <div class="field" id="field-messenger-contact">
+              <label for="messenger_contact">Контакт в мессенджере <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="messenger_contact" name="messenger_contact" placeholder="@username или номер телефона" required>
+              <span class="field-error" role="alert">Укажите ваш контакт для связи</span>
             </div>
 
             <div class="field" id="field-message">
@@ -1558,9 +1507,6 @@
     </section>
   </main>
 
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
@@ -1584,9 +1530,6 @@
     </div>
   </footer>
 
-  <!-- ============================================================
-       ПЛАВАЮЩАЯ КНОПКА (mobile)
-       ============================================================ -->
   <div class="float-cta" id="float-cta" aria-hidden="true">
     <a href="tel:+70000000000" class="float-call">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg>
@@ -1602,12 +1545,9 @@
     (function () {
       'use strict';
 
-      /* КЛЮЧЕВОЕ: JS-класс включает reveal-анимации. Без JS всё видно. */
       document.documentElement.classList.add('js-enabled');
 
-      /* 1. FAQ аккордеон */
       var faqButtons = document.querySelectorAll('.faq-question');
-
       faqButtons.forEach(function (btn) {
         btn.addEventListener('click', function () {
           var expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -1639,7 +1579,6 @@
         }
       });
 
-      /* 2. Плавный скролл по якорям */
       document.querySelectorAll('a[href^="#"]').forEach(function (link) {
         link.addEventListener('click', function (e) {
           var id = link.getAttribute('href');
@@ -1653,9 +1592,7 @@
         });
       });
 
-      /* 3. Reveal-анимации с фолбэком */
       var revealEls = document.querySelectorAll('.reveal');
-
       if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         var observer = new IntersectionObserver(function (entries) {
           entries.forEach(function (entry) {
@@ -1667,7 +1604,6 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
         revealEls.forEach(function (el) { observer.observe(el); });
-
         setTimeout(function () {
           revealEls.forEach(function (el) { el.classList.add('is-visible'); });
         }, 1800);
@@ -1675,7 +1611,6 @@
         revealEls.forEach(function (el) { el.classList.add('is-visible'); });
       }
 
-      /* 4. Плавающая кнопка */
       var floatCta = document.getElementById('float-cta');
       var heroEl = document.querySelector('.hero');
       var formEl = document.getElementById('form');
@@ -1693,27 +1628,30 @@
         toggleFloat();
       }
 
-      /* 5. Форма */
+      /* 5. Форма — отправка напрямую в Telegram */
       var form = document.getElementById('lead-form');
       var nameInput = document.getElementById('name');
-      var phoneInput = document.getElementById('phone');
+      var messengerSel = document.getElementById('messenger');
+      var messengerCont = document.getElementById('messenger_contact');
       var consentInput = document.getElementById('consent');
       var statusEl = document.getElementById('form-status');
       var fieldName = document.getElementById('field-name');
-      var fieldPhone = document.getElementById('field-phone');
+      var fieldMessenger = document.getElementById('field-messenger');
+      var fieldMessengerContact = document.getElementById('field-messenger-contact');
       var consentLabel = document.getElementById('consent-label');
       var consentError = document.getElementById('consent-error');
 
-      var validatePhone = function (v) {
-        var digits = v.replace(/\D/g, '');
-        return digits.length >= 10 && digits.length <= 15;
-      };
+      var BOT_TOKEN = '9229161323:AAG7Xqt0DSN33fhMd889umKjXaYzCN4lMGw';
+      var CHAT_ID = '7094985962';
 
       nameInput.addEventListener('input', function () {
         if (nameInput.value.trim()) fieldName.classList.remove('has-error');
       });
-      phoneInput.addEventListener('input', function () {
-        if (validatePhone(phoneInput.value)) fieldPhone.classList.remove('has-error');
+      messengerSel.addEventListener('change', function () {
+        if (messengerSel.value) fieldMessenger.classList.remove('has-error');
+      });
+      messengerCont.addEventListener('input', function () {
+        if (messengerCont.value.trim()) fieldMessengerContact.classList.remove('has-error');
       });
       consentInput.addEventListener('change', function () {
         if (consentInput.checked) {
@@ -1731,8 +1669,11 @@
         if (!nameInput.value.trim()) { fieldName.classList.add('has-error'); ok = false; }
         else fieldName.classList.remove('has-error');
 
-        if (!validatePhone(phoneInput.value)) { fieldPhone.classList.add('has-error'); ok = false; }
-        else fieldPhone.classList.remove('has-error');
+        if (!messengerSel.value) { fieldMessenger.classList.add('has-error'); ok = false; }
+        else fieldMessenger.classList.remove('has-error');
+
+        if (!messengerCont.value.trim()) { fieldMessengerContact.classList.add('has-error'); ok = false; }
+        else fieldMessengerContact.classList.remove('has-error');
 
         if (!consentInput.checked) {
           consentLabel.classList.add('has-error');
@@ -1744,32 +1685,59 @@
         }
 
         if (!ok) {
-          var fe = form.querySelector('.has-error input, .has-error textarea');
+          var fe = form.querySelector('.has-error input, .has-error select, .has-error textarea');
           if (fe) fe.focus();
           return;
         }
 
-        /* === РЕАЛЬНАЯ ОТПРАВКА ===
-           var endpoint = form.getAttribute('data-endpoint');
-           if (endpoint) {
-             fetch(endpoint, { method: 'POST', body: new FormData(form) })
-               .then(...)...
-           }
-           Сейчас — имитация. */
         var submitBtn = form.querySelector('.form-submit');
+        var originalText = submitBtn.textContent;
         submitBtn.disabled = true;
         submitBtn.textContent = 'Отправка...';
 
-        setTimeout(function () {
-          statusEl.className = 'form-status success';
-          statusEl.textContent = 'Спасибо! Ваша заявка принята. Я свяжусь с вами в ближайшее время — обычно в течение нескольких часов.';
-          form.reset();
+        var messenger = messengerSel.value;
+        var contact = messengerCont.value.trim();
+        var message = document.getElementById('message').value.trim() || '—';
+
+        var text = 
+          '🔔 Новая заявка с сайта\n\n' +
+          '👤 Имя: ' + nameInput.value.trim() + '\n' +
+          '💬 Мессенджер: ' + messenger + '\n' +
+          '📱 Контакт: ' + contact + '\n' +
+          '📝 Ситуация: ' + message;
+
+        var apiUrl = 'https://api.telegram.org/bot' + BOT_TOKEN + '/sendMessage';
+
+        fetch(apiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: CHAT_ID,
+            text: text,
+            disable_web_page_preview: true
+          })
+        })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data.ok === true) {
+            statusEl.className = 'form-status success';
+            statusEl.textContent = 'Спасибо! Ваша заявка отправлена. Я свяжусь с вами в ближайшее время — обычно в течение нескольких часов.';
+            form.reset();
+          } else {
+            statusEl.className = 'form-status error';
+            statusEl.textContent = 'Не удалось отправить заявку. Попробуйте позже или напишите в мессенджер напрямую.';
+          }
+        })
+        .catch(function () {
+          statusEl.className = 'form-status error';
+          statusEl.textContent = 'Ошибка сети. Проверьте соединение и попробуйте ещё раз.';
+        })
+        .finally(function () {
           submitBtn.disabled = false;
-          submitBtn.textContent = 'Отправить заявку';
-        }, 900);
+          submitBtn.textContent = originalText;
+        });
       });
 
-      /* 6. Год в футере */
       var yearEl = document.getElementById('year');
       if (yearEl) yearEl.textContent = new Date().getFullYear();
     })();
