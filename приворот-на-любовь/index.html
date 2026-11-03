@@ -18,12 +18,13 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ясновидящая Вера — потомственная практика | 20+ лет опыта</title>
-  <meta name="description" content="Потомственная ясновидящая Вера. Гармонизация отношений, возврат любимого, снятие негатива, защита и очищение. 20+ лет практики, полная конфиденциальность, индивидуальный подход.">
-  <meta property="og:title" content="Ясновидящая Вера — потомственная практика">
-  <meta property="og:description" content="Потомственная ясновидящая с 20+ летним опытом. Гармонизация отношений, возврат любимого, снятие негатива. Конфиденциально.">
+  <title>Ясновидящая Вера — помощь в сложных жизненных ситуациях | 20+ лет практики</title>
+  <meta name="description" content="Потомственная ясновидящая Вера. Помощь в любви, отношениях, финансах, снятие негатива и поиск предназначения. 20+ лет практики, полная конфиденциальность, индивидуальный подход.">
+  <meta property="og:title" content="Ясновидящая Вера — помощь в сложных жизненных ситуациях">
+  <meta property="og:description" content="Потомственная ясновидящая с 20+ летним опытом. Любовь, отношения, финансы, снятие негатива, предназначение. Конфиденциально.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="img.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -191,9 +192,9 @@
     .hero-topline {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 12px 32px;
       padding: 0 0 32px;
       border-bottom: 1px solid var(--line);
       margin-bottom: 40px;
@@ -218,10 +219,10 @@
     }
 
     .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 44px;
-      align-items: center;
+      display: block;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
       position: relative;
       z-index: 1;
     }
@@ -256,8 +257,8 @@
       font-size: clamp(1rem, 2.1vw, 1.16rem);
       color: var(--ink-soft);
       font-weight: 300;
-      max-width: 560px;
-      margin-bottom: 36px;
+      max-width: 600px;
+      margin: 0 auto 36px;
       line-height: 1.75;
     }
 
@@ -266,6 +267,7 @@
       flex-wrap: wrap;
       gap: 16px;
       margin-bottom: 40px;
+      justify-content: center;
     }
 
     .hero-trust {
@@ -274,6 +276,7 @@
       gap: 14px 32px;
       padding-top: 28px;
       border-top: 1px solid var(--line);
+      justify-content: center;
     }
 
     .hero-trust li {
@@ -296,48 +299,6 @@
       text-transform: uppercase;
       color: var(--ink-soft);
       font-weight: 500;
-    }
-
-    .hero-services {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      margin-top: 8px;
-    }
-
-    .hero-service {
-      padding: 22px 24px 22px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .hero-service:nth-child(odd) {
-      border-right: 1px solid var(--line);
-      padding-right: 24px;
-    }
-
-    .hero-service:nth-child(even) {
-      padding-left: 24px;
-    }
-
-    .hero-service:nth-last-child(-n+2) {
-      border-bottom: none;
-    }
-
-    .hero-service h3 {
-      font-size: 1.12rem;
-      font-style: italic;
-      font-weight: 400;
-      margin-bottom: 4px;
-      color: var(--plum);
-    }
-
-    .hero-service p {
-      font-size: 0.82rem;
-      color: var(--ink-soft);
-      font-weight: 300;
-      line-height: 1.6;
     }
 
     .problems {
@@ -1007,7 +968,7 @@
 
     .float-cta a:active { transform: scale(0.97); }
 
-    .float-cta .float-top {
+    .float-cta .float-call {
       background: var(--cream);
       color: var(--plum);
       border: 1px solid var(--plum);
@@ -1063,10 +1024,6 @@
     @media (min-width: 900px) {
       .section { padding: 120px 0; }
       .hero { padding: 64px 0 120px; }
-      .hero-grid { grid-template-columns: 1fr; gap: 44px; }
-      .hero-services { grid-template-columns: repeat(4, 1fr); }
-      .hero-service { padding: 26px 24px !important; border-right: 1px solid var(--line); border-bottom: none !important; }
-      .hero-service:last-child { border-right: none; }
       .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 48px; }
       .cta-wrap { grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
       .float-cta { display: none; }
@@ -1098,11 +1055,11 @@
       <div class="hero-grid">
         <div class="hero-content reveal">
           <span class="hero-eyebrow">— Помощь в сложных жизненных ситуациях —</span>
-          <h1>Ясновидящая <span>Вера</span></h1>
+          <h1>Ясновидящая Вера <span>ответы там, где молчит логика</span></h1>
           <p class="hero-sub">
-            Гармонизация отношений, возврат любимого, снятие негатива и защита.
-            Более 20 лет помогаю женщинам находить ответы и восстанавливать
-            внутреннее равновесие — бережно и конфиденциально.
+            Возвращение любви, восстановление отношений, снятие негатива, помощь в работе и финансах, 
+            поиск предназначения и решение семейных вопросов. Индивидуальная работа после глубокой 
+            диагностики — бережно, честно и конфиденциально.
           </p>
           <div class="hero-actions">
             <a href="#form" class="btn btn-primary">Получить консультацию</a>
@@ -1113,27 +1070,6 @@
             <li><strong>3000+</strong><span>клиентов</span></li>
             <li><strong>100%</strong><span>конфиденциально</span></li>
           </ul>
-        </div>
-
-        <div class="reveal">
-          <div class="hero-services">
-            <div class="hero-service">
-              <h3>Любовная магия</h3>
-              <p>Возврат любимого, приворот, гармонизация отношений</p>
-            </div>
-            <div class="hero-service">
-              <h3>Снятие негатива</h3>
-              <p>Порча, сглаз, родовые проклятия, очищение</p>
-            </div>
-            <div class="hero-service">
-              <h3>Защита и оберег</h3>
-              <p>Личная защита, защита семьи и дома</p>
-            </div>
-            <div class="hero-service">
-              <h3>Диагностика</h3>
-              <p>Просмотр ситуации, энергетики, прошлых жизней</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -1403,16 +1339,6 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
-              <span>Вы даёте гарантию результата?</span>
-              <span class="faq-question-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
-              <div class="faq-answer-inner">Я не обещаю стопроцентного результата — это было бы нечестно. Каждая ситуация уникальна, и итог зависит от многих факторов. На консультации я честно оцениваю шансы и говорю, есть ли смысл работать в вашем случае. Моя задача — сделать всё возможное, чтобы помочь.</div>
-            </div>
-          </div>
-
-          <div class="faq-item">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
               <span>Насколько конфиденциальна информация?</span>
               <span class="faq-question-icon" aria-hidden="true"></span>
@@ -1455,7 +1381,6 @@
               Расскажите вашу ситуацию — я выслушаю, проведу первичную диагностику
               и скажу, есть ли смысл работать в вашем случае. Без давления и навязывания услуг.
             </p>
-          </div>
 
           <form class="form" id="lead-form" novalidate>
             <div class="field" id="field-name">
@@ -1465,18 +1390,20 @@
             </div>
 
             <div class="field" id="field-messenger">
-              <label for="messenger">Мессенджер <span class="req" aria-hidden="true">*</span></label>
+              <label for="messenger">Способ связи <span class="req" aria-hidden="true">*</span></label>
               <select id="messenger" name="messenger" required>
-                <option value="">— выберите мессенджер —</option>
+                <option value="">— выберите способ связи —</option>
                 <option value="Telegram">Telegram</option>
                 <option value="MAX">MAX</option>
+                <option value="Телефон">Телефон</option>
+                <option value="Почта">Почта</option>
               </select>
-              <span class="field-error" role="alert">Выберите мессенджер</span>
+              <span class="field-error" role="alert">Выберите способ связи</span>
             </div>
 
             <div class="field" id="field-messenger-contact">
-              <label for="messenger_contact">Контакт в мессенджере <span class="req" aria-hidden="true">*</span></label>
-              <input type="text" id="messenger_contact" name="messenger_contact" placeholder="@username или номер телефона" required>
+              <label for="messenger_contact">Контакт для связи <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="messenger_contact" name="messenger_contact" placeholder="@username, номер телефона или email" required>
               <span class="field-error" role="alert">Укажите ваш контакт для связи</span>
             </div>
 
@@ -1507,6 +1434,7 @@
       <div class="footer-inner">
         <div>
           <div class="footer-brand">Ясновидящая Вера</div>
+         
         </div>
 
         <div class="footer-disclaimer">
@@ -1523,9 +1451,9 @@
   </footer>
 
   <div class="float-cta" id="float-cta" aria-hidden="true">
-    <a href="#top" class="float-top" id="back-to-top">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      В начало
+    <a href="#top" class="float-call" id="scroll-top-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+      Вверх
     </a>
     <a href="#form" class="float-write">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 2l-2 2m-7.6 7.6a5 5 0 11-7.1 7.1 5 5 0 017.1-7.1zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
@@ -1538,6 +1466,14 @@
       'use strict';
 
       document.documentElement.classList.add('js-enabled');
+
+      var scrollTopBtn = document.getElementById('scroll-top-btn');
+      if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
 
       var faqButtons = document.querySelectorAll('.faq-question');
       faqButtons.forEach(function (btn) {
@@ -1574,7 +1510,7 @@
       document.querySelectorAll('a[href^="#"]').forEach(function (link) {
         link.addEventListener('click', function (e) {
           var id = link.getAttribute('href');
-          if (id === '#') return;
+          if (id === '#' || id === '#top') return;
           var target = document.querySelector(id);
           if (target) {
             e.preventDefault();
@@ -1620,6 +1556,7 @@
         toggleFloat();
       }
 
+      /* Форма — отправка напрямую в Telegram */
       var form = document.getElementById('lead-form');
       var nameInput = document.getElementById('name');
       var messengerSel = document.getElementById('messenger');
@@ -1693,7 +1630,7 @@
         var text = 
           '🔔 Новая заявка с сайта\n\n' +
           '👤 Имя: ' + nameInput.value.trim() + '\n' +
-          '💬 Мессенджер: ' + messenger + '\n' +
+          '💬 Способ связи: ' + messenger + '\n' +
           '📱 Контакт: ' + contact + '\n' +
           '📝 Ситуация: ' + message;
 
